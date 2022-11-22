@@ -1,0 +1,56 @@
+.newTask {
+  width: 46rem;
+}
+
+.addTodo {
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textTodo {
+  background: var(--gray-500);
+  color: var(--gray-300);
+
+  width: 39.875rem;
+  height: 3.375rem;
+  font-size: 1rem;
+  padding: 1rem;
+  gap: 0.5rem;
+
+  border: 0;
+  border-radius: 8px;
+}
+
+.addTodo button[type=submit] {
+  background: var(--blue-dark);
+
+  width: 5.625rem;
+  height: 3.25rem;
+  margin-left: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+}
+
+.addTodo button[type=submit]:hover {
+  background: var(--blue);
+}
+
+.addTodo button p {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: var(--gray-100);
+}
+
+

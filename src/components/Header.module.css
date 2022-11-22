@@ -1,0 +1,21 @@
+.header {
+  background: var(--gray-700);
+  width: 100%;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.iconLogo {
+  width: 22px;
+  height: 36px;
+  margin-right: 0.75rem;
+  
+}
+
+.todoLogo {
+  width: 92px;
+  height: 48px;
+}
