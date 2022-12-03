@@ -1,0 +1,24 @@
+.task {
+  display: flex;
+  width: 46rem;
+  height: 72px;
+  padding: 1rem;
+  gap: 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  align-items: flex-start;
+  margin: 12px auto;
+
+  background: var(--gray-500);
+  
+}
+
+.task input {
+  background: var(--blue);
+  width: 17.45px;
+  height: 17.45px;
+  top: 3.27px;
+  bottom: 3.27px;
+  border-radius: 10px;
+
+}

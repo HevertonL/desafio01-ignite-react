@@ -1,13 +1,13 @@
-.newTask {
-  width: 46rem;
-}
-
 .addTodo {
-
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  position: absolute;
+  top: 173px;
+  left: calc(50% - 736px/2);
+  padding: 0;
+  gap: 0.5rem;
+  
 }
 
 .textTodo {
@@ -39,7 +39,7 @@
   border-radius: 8px;
 
   cursor: pointer;
-  transition: background-color 0.1s;
+  transition: background-color 0.3s;
 
 }
 
@@ -51,6 +51,90 @@
   margin-right: 0.5rem;
   font-weight: bold;
   color: var(--gray-100);
+}
+
+.createdAndCompletedHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1.5rem;
+  margin: 91px auto;
+}
+
+.taskList header {
+  display: flex;
+  width: 46rem;
+  height: 19px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  
+}
+
+.createdAndCompletedHeader strong {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+.createdTasksHeader span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.createdTasksHeader span p {
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.5rem;
+  border-radius: 999px;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 2px 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  
+}
+
+.completedTasksHeader span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--purple);
+}
+
+.completedTasksHeader span p {
+  width: 3.25rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  padding: 2px 8px;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.52px;
 }
 
 
