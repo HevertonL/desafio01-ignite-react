@@ -6,25 +6,17 @@ import { useState } from "react";
 
 export function Todos() {
   const [tasks, setTask] = useState<string[]>([]);
-  const [description, changeDescription]= useState("");
-  
-  function changeTask(value: string){
-    changeDescription(value)
-  }
-
-  function createTask(){
-    setTask([...tasks, description]);
-  }
+  const [description, changeDescription]= useState<string>("");
 
   return (
     <main className={styles.newTask}>
       
       <div className={styles.addTodo}>
-        <input className={styles.textTodo} onChange={(e)=> changeTask(e.target.value)}
+        <input className={styles.textTodo} onChange={(e)=> changeDescription(e.target.value)}
           type="text" 
           placeholder=" Adicione uma nova tarefa"
         />
-        <button type="submit" onClick={createTask}>
+        <button type="submit" onClick={() => setTask([...tasks, description])}>
           <p>Criar</p> 
           <PlusCircle color="#F2F2F2"size={16}/>
         </button>
