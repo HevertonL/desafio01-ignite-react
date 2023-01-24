@@ -45,7 +45,7 @@ export function Todos() {
         </header>
 
         {tasks.map((item, index)=>{
-          return <Tasks  item={item} />
+          return <Tasks  item={item} key={index} />
         })}
        
       </div>
