@@ -1,14 +1,18 @@
 import { Trash } from "phosphor-react"
 import styles from "./Tasks.module.css"
 
-export function Tasks () {
+interface Task{
+  item: string;
+}
+
+export function Tasks (props : Task) {
   return(
     <div className={styles.task}>
           <input className={styles.checkbox} 
             type="checkbox"
             
           />
-          <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+          <p>{props.item}</p>
           <Trash color="#fff" size={24}/>
     </div>
   )
