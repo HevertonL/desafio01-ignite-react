@@ -94,19 +94,19 @@
 }
 
 .createdTasksHeader span p {
-  width: 1.5rem;
+  
   display: flex;
+  width: 1.5rem;
   justify-content: center;
   margin-left: 0.5rem;
   border-radius: 999px;
   color: var(--gray-200);
   background: var(--gray-400);
   padding: 2px 8px;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 15px;
   
 }
@@ -121,7 +121,7 @@
 }
 
 .completedTasksHeader span p {
-  width: 3.25rem;
+  width: 3.5rem;
   margin-left: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@
 
   font-family: 'Inter';
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14.52px;
 }
 
